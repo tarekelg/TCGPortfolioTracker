@@ -7,7 +7,7 @@ const userRouter = Router();
 userRouter.post("/login", authUser.login);
 userRouter.get("/me", verifyToken, authUser.getUser);
 
-userRouter.post("/register", authUser.signUp);
+userRouter.post("/signup", authUser.signUp);
 userRouter.post("/logout", verifyToken, authUser.logout);
 
 export default userRouter;
